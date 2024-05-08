@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  clothingstorean:
+    image: ${DOCKER_REGISTRY-}clothingstorean
+    build:
+      context: .
+      dockerfile: ClothingStoreAN/Dockerfile
